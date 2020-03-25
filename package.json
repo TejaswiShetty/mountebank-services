@@ -1,0 +1,19 @@
+{
+  "name": "mountebank-services-virtualization",
+  "version": "1.0.0",
+  "description": "tool to mock services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejaswiShetty/mountebank-services.git"
+  },
+  "author": "tejaswi.r",
+  "license": "ISC",
+  "dependencies": {
+    "mountebank": "^2.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "predicates": [
+            {
+                "and": [
+                    {
+                        "equals": {
+                            "method": "POST"
+                        }
+                    },
+                    {
+                        "startsWith": {
+                            "path": "/service_2"
+                        }
+                    }
+                ]
+            }
+        ],
+        "responses": [
+            {
+                "is": {
+                    "statusCode": 200,
+                    "headers": {
+                        "Content-Type": "application/json"
+                    }
+                },
+                "_behaviors": {
+                    "shellTransform": [
+                        "node ././resources/scripts/service_2/service2.js"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "responses": [
+            {
+                "is": {
+                    "statusCode": 404
+                }
+            }
+        ]
+    }
+]
